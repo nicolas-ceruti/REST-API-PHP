@@ -1,0 +1,18 @@
+CREATE DATABASE atividade_crud;
+
+USE atividade_crud;
+
+CREATE TABLE `dm_usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) NOT NULL,
+  `sobrenome` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `telefone` varchar(20) NOT NULL,
+  `idade` int(11) NOT NULL,
+  `senha` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+
+INSERT INTO atividade_crud.dm_usuarios
+(nome, sobrenome, email, telefone, idade, senha)
+VALUES('nome', 'sobrenome', 'email', 'telefone', 0, 'senha');
